@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 if ! command -v git >/dev/null 2>&1; then
 	echo "Git is not installed."
@@ -6,7 +7,11 @@ if ! command -v git >/dev/null 2>&1; then
 	exit 1
 fi
 
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+	echo "This script must be run from inside the website git repository."
+	exit 1
+fi
+
 echo "Git is installed: $(git --version)"
 
-git fetch
-git pull
+git pull --ff-only
