@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LIBERANET — Autonomous System AS4242421323</title>
-<meta name="description" content="LIBERANET — autonomous system operator. Two PoPs in France, open peering policy, strict RPKI filtering.">
+<meta name="description" content="LIBERANET — French network. Two PoPs in France, open peering policy, strict RPKI filtering.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
 <section class="hero">
     <div class="wrap hero-grid">
         <div>
-            <span class="eyebrow"><span class="dot"></span> Autonomous system — 2 active PoPs in France</span>
+            <span class="eyebrow"><span class="dot"></span> Network — 2 active PoPs in France</span>
             <h1>Routing, <em>without detours.</em></h1>
             <p class="lead">LIBERANET is an autonomous system operating points of presence in Paris and Marseille. Open peering policy, strict RPKI filtering, and a team that answers when you need it.</p>
             <div class="hero-ctas">
@@ -43,7 +43,7 @@
             </div>
             <div class="hero-meta">
                 <div><div class="num mono">2</div><div class="lbl">PoPs — FR-PAR / FR-MRS</div></div>
-                <div><div class="num mono">RPKI</div><div class="lbl">Strict route origin validation</div></div>
+                <div><div class="num mono">ROA</div><div class="lbl">Strict route origin validation</div></div>
                 <div><div class="num mono">24/7</div><div class="lbl">NOC on call</div></div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                 </div>
                 <p class="desc">Main PoP, hosted in an interconnected facility at the heart of the Paris region. Recommended entry point for IPv4 and IPv6 peering.</p>
                 <div class="pop-specs">
-                    <div><div class="k">Endpoint</div><div class="v">fr-par-01.liberanet.dn42</div></div>
+                    <div><div class="k">Endpoint</div><div class="v">fr-par.liberanet.dn42</div></div>
                     <div><div class="k">WireGuard PublicKey</div><div class="v">wgPublicKeyPlaceholder0000000000000000000=</div></div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 </div>
                 <p class="desc">Main PoP, positioned at one of Europe's major submarine cable landing points. Ideal for peering toward Southern Europe, Africa and Asia.</p>
                 <div class="pop-specs">
-                    <div><div class="k">Endpoint</div><div class="v">fr-mrs-01.liberanet.dn42</div></div>
+                    <div><div class="k">Endpoint</div><div class="v">fr-mrs.liberanet.dn42</div></div>
                     <div><div class="k">WireGuard PublicKey</div><div class="v">wgPublicKeyPlaceholder1111111111111111111=</div></div>
                 </div>
             </div>
@@ -126,7 +126,7 @@
         <div class="section-head reveal">
             <span class="eyebrow">Peering policy</span>
             <h2>Open, but rigorous.</h2>
-            <p>We're happy to peer with any network holding a valid ASN and up-to-date routing objects. In return, we apply strict RPKI/ROA-based filtering.</p>
+            <p>We're happy to peer with any network holding a valid ASN and up-to-date routing objects. In return, we apply strict ROA-based filtering.</p>
         </div>
 
         <div class="policy-grid">
@@ -158,7 +158,7 @@
                 <div class="peer-cta-box reveal">
                     <p style="color:var(--ink); font-weight:600; font-family:'Space Grotesk';">Ready to send a request?</p>
                     <p style="margin-top:6px; font-size:.9rem;">Reach out with your ASN, your prefixes and the PoP you'd like to peer at.</p>
-                    <a href="https://peer.liberanet.dn42" class="btn btn-primary btn-sm" style="margin-top:16px;">Start a peering request →</a>
+                    <a href="https://peer.2" class="btn btn-primary btn-sm" style="margin-top:16px;">Start a peering request →</a>
                     <p class="note">Placeholder link — replace with your peering request form or PeeringDB profile.</p>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="roa-panel reveal">
                 <div class="roa-head">
                     <h3>ROA policy</h3>
-                    <span class="tag">RPKI origin validation</span>
+                    <span class="tag">ROA-based origin validation</span>
                 </div>
                 <div class="roa-row">
                     <span class="roa-name">Invalid ROA</span>
@@ -196,7 +196,7 @@
         <div class="section-head reveal">
             <span class="eyebrow">Network services</span>
             <h2>What we make available.</h2>
-            <p>Infrastructure services open to our peers and customers, with more on the way.</p>
+            <p>Infrastructure services open to our peers, with more on the way.</p>
         </div>
 
         <div class="svc-grid">
@@ -210,7 +210,8 @@
                 <h4>NTP server <span class="svc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h4>
                 <p>Trusted stratum time synchronization, reachable from both PoPs.</p>
             </a>
-            <a href="https://lg.liberanet.dn42" class="svc-card reveal">
+            <!-- Need to change ASAP when we have the clearnet domain -->
+            <a href="https://lg.liberanet.dn42" class="svc-card reveal"> 
                 <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
                 <h4>Looking Glass <span class="svc-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h4>
                 <p>Query our live routing tables from FR-PAR and FR-MRS.</p>
@@ -229,13 +230,12 @@
     <div class="wrap">
         <div class="cta-banner reveal">
             <div class="cta-inner">
-                <h2>Have an ASN and need to peer?</h2>
+                <h2>Have an ASN and want to peer?</h2>
                 <p>Send us your ASN, your prefixes and the PoP you'd like to peer at — we'll get back to you quickly.</p>
                 <div class="cta-actions">
                     <a href="https://peer.liberanet.dn42" class="btn btn-primary">Start a peering request →</a>
                     <a href="https://www.peeringdb.com/asn/4242421323" class="btn btn-ghost">View on PeeringDB</a>
                 </div>
-                <p class="cta-note">Placeholders — replace the peering link and PeeringDB ID with your own.</p>
             </div>
         </div>
     </div>
@@ -251,16 +251,6 @@
         </div>
 
         <div class="contact-grid">
-            <div class="contact-card reveal">
-                <div class="k">General contact</div>
-                <a class="v link" href="mailto:contact@liberanet.dn42">contact@liberanet.dn42</a>
-                <p class="placeholder-note">Placeholder — customize this.</p>
-            </div>
-            <div class="contact-card reveal">
-                <div class="k">Abuse</div>
-                <a class="v link" href="mailto:abuse@liberanet.dn42">abuse@liberanet.dn42</a>
-                <p class="placeholder-note">Placeholder — customize this.</p>
-            </div>
             <div class="contact-card reveal">
                 <div class="k">Phone</div>
                 <span class="v" style="color:var(--ink-faint);">Coming soon</span>
