@@ -1,6 +1,6 @@
 # Tasks
-- [ ] On ``./index.html`` line 161 change the url to a clear net url when we got it
-- [ ] On ``./index.html`` line 214 need to change ASAP when we have the clearnet domain
-- [ ] CRON task to add for ./update.sh
-> ``0 23 * * 1 /bin/bash /var/www/website/update.sh``
-> a cron task like every first of the week tu update the website or like when the main vas new commit update
+- [ ] In `./index.html` line 161, change the URL to the clearnet URL once we have it
+- [ ] In `./index.html` line 215, change the URL to the clearnet URL once we have it
+- [ ] Add a cron task for `./update.sh`
+> `0 23 * * 1 cd /var/www/website && /bin/bash ./update.sh`
+> Runs every Monday at 23:00 to update the website from the repository
